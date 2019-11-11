@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Author: Tyler Chilcote
+	Date:   May 2, 2019
+-->
+	<head>
+		<title>Tyler Chilcote Portfolio Home</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Tyler Chilcote's portfolio">
+		<meta name="keywords" content="HTML,CSS,portfolio,Tyler,Chilcote">
+		<meta name="author" content="JTyler Chilcote">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/clock.js" defer></script>
+		<script src="js/effects.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a href="index.html"><img src="images/home.png" alt="home link icon"></a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li class="active" id="home"><a href="index.html">Home</a></li>
+				  <li><a href="about.html" id="about">about me</a></li>
+				  <li><a href="exp.html" id="exp"> my experience</a></li>
+				  <li><a href="contact.html" id="contact">contact me</a></li>
+				</ul>
+				<!-- clock -->
+				<div style="text-align: right" id="clockText">
+					<p>current time:</p>
+					<p>
+						<span id="h">HH</span>:<span id="m">MM</span>:<span id="s">SS</span>
+					</p>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		<main>
+		<!-- Main page content -->
+			<div class="center" id="mainContent">
+				<h1>Home</h1>
+				<img src="images/me.jpg" class="rounded" alt="selfie of myself">
+				<p>
+					<span style="color:orange">Hello!</span> my name is Tyler Chilcote and I am currently studying software development<br><br>
+					please feel free to check out this portfolio for more information about myself!<br>
+				</p>
+			</div>
+		</main>
+		<!-- Footer with contact information and social media links -->
+		<footer id="indexFooter">
+			<p>E-Mail: <a href="mailto:chilcote.tyler@gmail.com">chilcote.tyler@gmail.com</a></p>
+			<p>phone #: <a href="tel:9163906885">(916)390-6885</a></p>
+			<div>
+				<a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+				<a href="https://github.com/" target="_blank"><img src="images/github.png" alt="GitHub Icon"></a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+/*
+Author: Tyler Chilcote
+Date Created:   5-2-2019
+Last Edit: 10-23-2019
+*/
+
+/* creates the font face */
+@font-face {
+  font-family: Vegan;
+  src: url(../fonts/vegan.ttf);
+}
+
+/* creates center class which will automatically center text to elements that use it */
+.center {
+	text-align: center;
+}
+
+/* creates rounded class which will automatically adds a circular border to elements that use it */
+.rounded {
+	border-radius: 100%;
+}
+
+/* overrall styling */
+body {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #99ddff;
+}
+
+header {
+	margin: 0;
+	padding: 1em;
+	width: 100%;
+	background-color: #99ddff;
+	margin-left:auto; 
+	margin-right:auto;
+	
+}
+
+a {
+	font-size: 1em;
+}
+
+h2 {
+	font-family: 'Gugi', cursive;
+}
+
+nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+header table {
+	width: 80%;
+	margin-left:auto; 
+	margin-right:auto;
+	margin-bottom: 1em;
+}
+header table th {
+	border: 1px solid black;
+	border-radius: 25px;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+main table {
+	border-collapse: collapse;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+main th {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+main td {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+header th {
+	padding: 10px;
+}
+
+header img {
+	float:left;
+}
+
+footer {
+	padding: 1em;
+	width: 100%;
+	background-color: #4286f4;
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top: 10px;
+	text-align:center;
+	font-size: .75em;
+	margin-bottom: 0;
+	font-family: Courier;
+	/* keep footer at the bottom of the screen */
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+h1 {
+	font-family: Vegan;
+}
+
+footer a {
+	color: #ff9966;
+}
+
+#indexFooter {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+thead, tfoot {
+	background-color: #66b3ff;
+}
+
+main tbody {
+	background-color: #e6f2ff;
+}
+
+/* Media breakpoint */
+@media (max-width: 641px) {
+
+	html, body {
+		background-color: #e6ffff;
+	}
+
+	nav table th{
+		display: block;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #000;
+	}
+
+	header, footer {
+		background-color: #99ddff;
+	}
+
+	footer {
+		position: static;
+	}
+
+	/* removes the image on mobile views */
+	main img {
+		display: none;
+	}
+
+}
+
+/* changes the color of the clock text */
+#clockText {
+	color: gray;
+}

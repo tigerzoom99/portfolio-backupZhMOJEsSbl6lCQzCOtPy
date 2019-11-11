@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Author: Tyler Chilcote
+	Date:   May 2, 2019
+-->
+	<head>
+		<title>Tyler Chilcote Portfolio Contact</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Tyler Chilcote's portfolio">
+		<meta name="keywords" content="HTML,CSS,portfolio,Tyler,Chilcote">
+		<meta name="author" content="JTyler Chilcote">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- links -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/clock.js" defer></script>
+		<script src="js/effects.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <a href="index.html"><img src="images/home.png" alt="home link icon"></a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li><a href="index.html" id="home">Home</a></li>
+				  <li><a href="about.html" id="about">about me</a></li>
+				  <li><a href="exp.html" id="exp"> my experience</a></li>
+				  <li class="active"><a href="contact.html" id="contact">contact me</a></li>
+				</ul>
+				<!-- clock -->
+				<div style="text-align: right" id="clockText">
+					<p>current time:</p>
+					<p>
+						<span id="h">HH</span>:<span id="m">MM</span>:<span id="s">SS</span>
+					</p>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		<main>
+			<div class="center">
+				<h1>Contact Me</h1>
+				<form action="mailto:tigerzoom99@gmail.com" method="post" enctype="text/plain" id="usrform">
+					<fieldset>
+					First name: 
+					<input type="text" name="firstname" placeholder="John"><br>
+					Last name: 
+					<input type="text" name="lastname" placeholder="Smith"><br><br>
+					Please review my website:<br>
+					<textarea name="comment" form="usrform" placeholder="text goes here..."></textarea><br><br>
+					hey what's your favorite primary color?
+					<select name="favoriteColor">
+						<option value="red">Red</option>
+						<option value="blue">Blue</option>
+						<option value="yellow">Yellow</option>
+					</select>
+					<br><br>
+					are these radio buttons?<br>
+					<input type="radio" name="yesbutton" value="yes" checked> yes<br>
+					<input type="radio" name="yesbutton" value="maybe"> maybe<br>
+					<input type="submit" value="Submit">
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<p>E-Mail: <a href="mailto:chilcote.tyler@gmail.com">chilcote.tyler@gmail.com</a></p>
+			<p>phone #: <a href="tel:9163906885">(916)390-6885</a></p>
+			<div>
+				<a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+				<a href="https://github.com/" target="_blank"><img src="images/github.png" alt="GitHub Icon"></a>
+			</div>
+		</footer>
+	</body>
+</html>
